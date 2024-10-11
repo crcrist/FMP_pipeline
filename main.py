@@ -16,7 +16,7 @@ async def fetch_and_process_stock(symbol):
 
     cleaned_data = clean_stock_data(raw_data)
 
-    await load_to_sql_server(cleaned_data, 'Sock_Prices')
+    await load_to_sql_server(cleaned_data, 'Stock_Prices')
 
 async def main():
     # Fetch the stock list asynchronously
